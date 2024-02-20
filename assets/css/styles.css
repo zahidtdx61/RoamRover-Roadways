@@ -1,0 +1,13 @@
+header,
+main {
+    width: 80vw;
+    /* max-width: 1280px; */
+    margin: 0 auto;
+}
+
+.banner {
+    background: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

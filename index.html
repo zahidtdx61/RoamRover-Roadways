@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,90 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@0,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header class="mt-8 font-raleway">
+        <nav class="flex flex-col lg:flex-row justify-between items-center">
+            <div class="font-extrabold text-4xl">
+                RoamRover - Ticket
+            </div>
+
+            <div>
+
+            </div>
+
+            <div class="text-xl">
+                <a class="btn b border-[#1DD10066]  bg-[#1DD10019] text-[#1DD100]">
+                    Bus <img src="./assets/images/bus-icon.png">
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- banner section -->
+        <section class="banner h-[550px] mt-10 w-full rounded-2xl relative">
+            <div class="w-[70%] h-full mx-auto flex flex-col justify-center items-center gap-8 font-raleway">
+                <p class="text-6xl text-white font-extrabold">End-to-End Travel with</p>
+                <p class="text-6xl text-[#1DD100] font-extrabold">RoamRover Roadways</p>
+                <p class="font-inter text-white font-normal text-xl text-center">
+                    RoamRover Roadways: Your ticket to endless exploration. Join us for unforgettable journeys, where
+                    every
+                    mile is a new adventure. Book now and roam freely with RoamRover!
+                </p>
+                <button class="btn bg-[#1DD100] border-[#1DD100] text-black">Buy Tickets</button>
+            </div>
+
+            <div class="absolute bottom-[-4rem] flex justify-around w-full">
+                <div
+                    class="h-32 w-72 bg-white rounded-2xl flex justify-around items-center border-b-4 border-[#1DD100]">
+                    <img src="./assets/images/people.png">
+                    <div class="flex flex-col">
+                        <p class="font-inter font-bold text-4xl text-black">500K+</p>
+                        <p class="font-inter text-xl text-[#03071299]">Registered Users</p>
+                    </div>
+                </div>
+
+                <div
+                    class="h-32 w-72 bg-white rounded-2xl flex justify-around items-center border-b-4 border-[#1DD100]">
+                    <img src="./assets/images/ticket-cupon.png">
+                    <div class="flex flex-col">
+                        <p class="font-inter font-bold text-4xl text-black">1.7 Lacks</p>
+                        <p class="font-inter text-xl text-[#03071299]">Tickets Sold</p>
+                    </div>
+                </div>
+
+                <div
+                    class="h-32 w-72 bg-white rounded-2xl flex justify-around items-center border-b-4 border-[#1DD100]">
+                    <img src="./assets/images/stoppage.png">
+                    <div class="flex flex-col">
+                        <p class="font-inter font-bold text-4xl text-black">80K+</p>
+                        <p class="font-inter text-xl text-[#03071299]">Rental Partners</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+    </main>
     <footer></footer>
     <script src="./assets/js/script.js"></script>
 </body>
