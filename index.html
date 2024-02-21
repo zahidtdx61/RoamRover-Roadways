@@ -55,7 +55,9 @@
                     every
                     mile is a new adventure. Book now and roam freely with RoamRover!
                 </p>
-                <button class="btn bg-[#1DD100] border-[#1DD100] text-black">Buy Tickets</button>
+                <button class="btn bg-[#1DD100] border-[#1DD100] text-black">
+                    <a href="#ticket-segment">Buy Tickets</a>
+                </button>
             </div>
 
             <div class="absolute bottom-[-4rem] flex justify-around w-full">
@@ -234,10 +236,10 @@
                 <!-- sits -->
                 <div class="w-[50%] p-8 flex-1">
                     <p class="text-left font-semibold text-xl">Select Your Seat</p>
-                    <div class="divider mt-14"></div>
+                    <div class="divider mt-4"></div>
 
                     <!-- available and selected logo -->
-                    <div class="w-full flex justify-between items-center">
+                    <div id="ticket-segment" class="w-full flex justify-between items-center">
                         <!-- left -->
                         <div class="text-[#03071280] font-inter flex gap-2 items-center">
                             <img src="./assets/images/seat-gray.svg">
@@ -253,24 +255,12 @@
                     <div class="divider"></div>
 
                     <!-- seat plans -->
-                    <div class="w-full flex flex-col text-[#03071280] font-inter text-xl gap-8 mt-12">
-
-                        <!-- row-1 -->
-                        <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
-                            <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
-                            </div>
-
-                            <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
-                            </div>
+                    <div class="w-full flex flex-col text-[#03071280] font-inter text-xl gap-8 mt-4">
+                        <!-- driver -->
+                        <div class="w-full flex justify-end">
+                            <button class="btn bg-[#F7F8F8] w-1/6">
+                                <img src="./assets/images/steering-wheel.svg">
+                            </button>
                         </div>
 
                         <!-- row-1 -->
@@ -286,152 +276,170 @@
                             <div class="flex w-[40%] justify-between ml-5">
                                 <div class="w-[45%]"><button id="A3"
                                         class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
+                                <div class="w-[45%]"><button id="A4"
                                         class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-2 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">B</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="B1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">B1</button></div>
+                                <div class="w-[45%]"><button id="B2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">B2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="B3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">B3</button></div>
+                                <div class="w-[45%]"><button id="B4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">B4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-3 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">C</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="C1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">C1</button></div>
+                                <div class="w-[45%]"><button id="C2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">C2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="C3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">C3</button></div>
+                                <div class="w-[45%]"><button id="C4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">C4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-4 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">D</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="D1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">D1</button></div>
+                                <div class="w-[45%]"><button id="D2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">D2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="D3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">D3</button></div>
+                                <div class="w-[45%]"><button id="D4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">D4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-5 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">E</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="E1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">E1</button></div>
+                                <div class="w-[45%]"><button id="E2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">E2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="E3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">E3</button></div>
+                                <div class="w-[45%]"><button id="E4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">E4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-6 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">F</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="F1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">F1</button></div>
+                                <div class="w-[45%]"><button id="F2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">F2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="F3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">F3</button></div>
+                                <div class="w-[45%]"><button id="F4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">F4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-7 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">G</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="G1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">G1</button></div>
+                                <div class="w-[45%]"><button id="G2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">G2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="G3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">G3</button></div>
+                                <div class="w-[45%]"><button id="G4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">G4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-8 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">H</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="H1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">H1</button></div>
+                                <div class="w-[45%]"><button id="H2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">H2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="H3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">H3</button></div>
+                                <div class="w-[45%]"><button id="H4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">H4</button></div>
                             </div>
                         </div>
 
-                        <!-- row-1 -->
+                        <!-- row-9 -->
                         <div class="flex justify-between items-center w-full">
-                            <div class="w-[5%]">A</div>
+                            <div class="w-[5%]">I</div>
                             <div class="flex w-[40%] justify-between mr-5">
-                                <div class="w-[45%]"><button id="A1"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A1</button></div>
-                                <div class="w-[45%]"><button id="A2"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A2</button></div>
+                                <div class="w-[45%]"><button id="I1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">I1</button></div>
+                                <div class="w-[45%]"><button id="I2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">I2</button></div>
                             </div>
 
                             <div class="flex w-[40%] justify-between ml-5">
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A3</button></div>
-                                <div class="w-[45%]"><button id="A3"
-                                        class="btn bg-[#F7F8F8] seat-plan w-full">A4</button></div>
+                                <div class="w-[45%]"><button id="I3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">I3</button></div>
+                                <div class="w-[45%]"><button id="I4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">I4</button></div>
+                            </div>
+                        </div>
+
+                        <!-- row-10 -->
+                        <div class="flex justify-between items-center w-full">
+                            <div class="w-[5%]">J</div>
+                            <div class="flex w-[40%] justify-between mr-5">
+                                <div class="w-[45%]"><button id="J1"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">J1</button></div>
+                                <div class="w-[45%]"><button id="J2"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">J2</button></div>
+                            </div>
+
+                            <div class="flex w-[40%] justify-between ml-5">
+                                <div class="w-[45%]"><button id="J3"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">J3</button></div>
+                                <div class="w-[45%]"><button id="J4"
+                                        class="btn bg-[#F7F8F8] seat-plan w-full">J4</button></div>
                             </div>
                         </div>
 
@@ -441,13 +449,13 @@
 
                 <!-- divider -->
                 <div class="py-8">
-                    <img src="./assets/images/Line 1.svg" class="h-full">
+                    <img src="./assets/images/Line-1.svg" class="h-full">
                 </div>
 
                 <!-- tickets and money -->
                 <div class="w-[40%]  p-8">
                     <p class="text-left font-semibold text-xl">Select Your Seat</p>
-                    <div class="divider mt-14"></div>
+                    <div class="divider mt-4"></div>
 
                     <!-- ticket prices -->
                     <div class="bg-[#F7F8F8] p-4 rounded-xl">
