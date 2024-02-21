@@ -11,3 +11,7 @@ main {
     background-position: center;
     background-size: cover;
 }
+
+.seat-plan:hover {
+    background-color: #1dd100;
+}
