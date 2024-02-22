@@ -12,9 +12,9 @@ main {
     background-size: cover;
 }
 
-.seat-plan:hover {
+/* .seat-plan:hover {
     background-color: #1dd100;
-}
+} */
 
 .my-modal {
     position: absolute;
