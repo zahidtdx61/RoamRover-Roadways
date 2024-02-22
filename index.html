@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@0,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <style>
         .font-inter {
             font-family: "Inter", sans-serif;
@@ -20,12 +22,17 @@
         .font-raleway {
             font-family: "Raleway", sans-serif;
         }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
     </style>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-    <header class="mt-8 font-raleway">
+    <!-- @TODO: remove hidden later -->
+    <header class="mt-8 font-raleway ">
         <!-- navbar -->
         <nav class="flex flex-col lg:flex-row justify-between items-center">
             <div class="font-extrabold text-4xl">
@@ -44,7 +51,8 @@
         </nav>
     </header>
 
-    <main>
+    <!-- @TODO: remove hidden later -->
+    <main class="">
         <!-- banner section -->
         <section class="banner h-[550px] mt-10 w-full rounded-2xl relative">
             <div class="w-[70%] h-full mx-auto flex flex-col justify-center items-center gap-8 font-raleway">
@@ -471,28 +479,28 @@
                         <!-- selected seats and price -->
                         <div class="text-inter text-[#03071299] font-medium px-1 mt-2">
                             <!-- t1 -->
-                            <div class="flex justify-between flex-1">
+                            <div class="flex justify-between flex-1 selected-ticket hidden">
                                 <div class="w-1/3 text-left">C2</div>
                                 <div class="w-1/3 text-left">Economy</div>
                                 <div class="w-1/3 text-right">550</div>
                             </div>
 
                             <!-- t2 -->
-                            <div class="flex justify-between flex-1">
+                            <div class="flex justify-between flex-1 selected-ticket hidden">
                                 <div class="w-1/3 text-left">C2</div>
                                 <div class="w-1/3 text-left">Economy</div>
                                 <div class="w-1/3 text-right">550</div>
                             </div>
 
                             <!-- t3 -->
-                            <div class="flex justify-between flex-1">
+                            <div class="flex justify-between flex-1 selected-ticket hidden">
                                 <div class="w-1/3 text-left">C2</div>
                                 <div class="w-1/3 text-left">Economy</div>
                                 <div class="w-1/3 text-right">550</div>
                             </div>
 
                             <!-- t4 -->
-                            <div class="flex justify-between flex-1">
+                            <div class="flex justify-between flex-1 selected-ticket hidden">
                                 <div class="w-1/3 text-left">C2</div>
                                 <div class="w-1/3 text-left">Economy</div>
                                 <div class="w-1/3 text-right">550</div>
@@ -546,7 +554,50 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+
+    <!-- modal -->
+    <section class="w-full hidden">
+        <!-- modal-window -->
+        <div class="my-modal text-center font-roboto w-1/2 flex flex-col justify-center items-center gap-6">
+            <img src="./assets/images/success.png">
+            <p class="text-[#27AE60] font-bold text-2xl">SUCCESS</p>
+            <div class="text-[#4A4A4A] font-medium text-xl">
+                <p>Thank you for Booking Our Bus Seats.</p>
+                <p>We are working hard to find the best service and deals for you. </p>
+                <p class="font-light">Shortly you will find a confirmation in your email.</p>
+            </div>
+            <button class="btn bg-[#27AE60] text-white text-xl font-semibold w-2/5 rounded-full">Continue</button>
+        </div>
+
+        <!-- overlay -->
+        <div class="overlay"></div>
+    </section>
+
+    <footer class="w-full bg-[#030712] p-32 text-white">
+        <div class="w-full">
+            <div class="font-raleway flex justify-between">
+                <p class="font-bold text-4xl">RoamRover Roadways</p>
+                <p class="font-semibold text-sm">Download our app</p>
+            </div>
+
+            <div class="w-full font-inter flex justify-between items-start">
+                <p class="w-1/3">P-Ticket is a digital platform to make your daily commuting better.</p>
+                <img src="./assets/images/playstore.svg" alt="">
+            </div>
+
+            <div class="h-[1px] w-full bg-white my-8"></div>
+            <div class="w-full font-inter text-sm flex justify-between">
+                <div class="w-1/2">
+                    <p>@all rights reserved, RoamRover Roadways services limited.2024</p>
+                </div>
+                <div class="w-2/5 flex text-right justify-between">
+                    <p>Terms & condition</p>
+                    <p>Return & refund policy</p>
+                    <p>Privacy policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 
