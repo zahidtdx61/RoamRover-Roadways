@@ -32,7 +32,7 @@
 
 <body>
     <!-- @TODO: remove hidden later -->
-    <header class="mt-8 font-raleway ">
+    <header id="page-header" class="mt-8 font-raleway ">
         <!-- navbar -->
         <nav class="flex flex-col lg:flex-row justify-between items-center">
             <div class="font-extrabold text-4xl">
@@ -52,7 +52,7 @@
     </header>
 
     <!-- @TODO: remove hidden later -->
-    <main class="">
+    <main id="page-main">
         <!-- banner section -->
         <section class="banner h-[550px] mt-10 w-full rounded-2xl relative">
             <div class="w-[70%] h-full mx-auto flex flex-col justify-center items-center gap-8 font-raleway">
@@ -520,9 +520,10 @@
                         </div>
 
                         <!-- coupons -->
-                        <div class="w-full flex bg-white p-2 rounded-lg my-4">
-                            <input type="text" placeholder="Have any coupon?" class="input w-full max-w-xs" />
-                            <button class="btn bg-[#1DD100] text-white btn-disabled" id="coupon-aply">Apply</button>
+                        <div class="w-full flex bg-white p-2 rounded-lg my-4" id="coupon-segment">
+                            <input type="text" placeholder="Have any coupon?" class="input w-full max-w-xs"
+                                id="coupon" />
+                            <button class="btn bg-[#1DD100] text-white btn-disabled" id="coupon-apply">Apply</button>
                         </div>
 
                         <!-- total -->
@@ -543,7 +544,8 @@
 
                         <p class="p-3 font-medium">Email ID</p>
                         <input type="text" placeholder="Enter your email id" class="input w-full max-w-xs" />
-                        <button class="btn my-4 bg-[#1DD100] text-white w-full font-raleway font-bold text-xl">
+                        <button id="btn-next"
+                            class="btn my-4 bg-[#1DD100] text-white w-full font-raleway font-bold text-xl">
                             Next
                         </button>
                     </div>
@@ -559,7 +561,7 @@
     </main>
 
     <!-- modal -->
-    <section class="w-full hidden">
+    <section class="w-full hidden" id="page-modal">
         <!-- modal-window -->
         <div class="my-modal text-center font-roboto w-1/2 flex flex-col justify-center items-center gap-6">
             <img src="./assets/images/success.png">
@@ -569,14 +571,15 @@
                 <p>We are working hard to find the best service and deals for you. </p>
                 <p class="font-light">Shortly you will find a confirmation in your email.</p>
             </div>
-            <button class="btn bg-[#27AE60] text-white text-xl font-semibold w-2/5 rounded-full">Continue</button>
+            <button class="btn bg-[#27AE60] text-white text-xl font-semibold w-2/5 rounded-full"
+                id="page-reload">Continue</button>
         </div>
 
         <!-- overlay -->
         <div class="overlay"></div>
     </section>
 
-    <footer class="w-full bg-[#030712] p-32 text-white">
+    <footer id="page-footer" class="w-full bg-[#030712] p-32 text-white">
         <div class="w-full">
             <div class="font-raleway flex justify-between">
                 <p class="font-bold text-4xl">RoamRover Roadways</p>
