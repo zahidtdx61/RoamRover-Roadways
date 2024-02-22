@@ -29,7 +29,22 @@ function updateTicket(element) {
     let tickets = document.querySelectorAll(".selected-ticket");
     tickets[selectedSeats].childNodes[1].innerText = element.id;
     tickets[selectedSeats].classList.remove("hidden");
-    console.log(tickets[selectedSeats].childNodes[1].classList);
+    // console.log(tickets[selectedSeats].childNodes[1].classList);
+}
+
+// enable next
+function enableBtn(id) {
+    document.getElementById(id).classList.remove("btn-disabled");
+}
+
+// disable next
+function disableBtn(id) {
+    document.getElementById(id).classList.add("btn-disabled");
+}
+
+// get phone number
+function getValue(id) {
+    return document.getElementById(id).value;
 }
 
 // add event for selecting seats
@@ -41,6 +56,12 @@ for (let i = 0; i < allSeats.length; i++) {
             updatePrice();
             updateTicket(allSeats[i]);
             updateSeatCount();
+            let addedCoupon = getValue("coupon");
+            if (selectedSeats === 4 && myCoupons.indexOf(addedCoupon) > -1) {
+                enableBtn("coupon-apply");
+            }
+            // console.log(getValue("phone").length);
+            if (getValue("phone").length > 0) enableBtn("btn-next");
         } else {
             alert("You can't select more than 4 seats");
         }
@@ -56,30 +77,46 @@ function discount(percentage) {
 
 // input coupon
 document.getElementById("coupon").addEventListener("keyup", (e) => {
-    let inputCoupon = e.target.value;
-    console.log(inputCoupon);
-    if (couponApplied === false && selectedSeats === 4) {
-        if (myCoupons.indexOf(inputCoupon) > -1) {
+    let inputCoupon = getValue("coupon");
+    if (
+        couponApplied === false &&
+        selectedSeats === 4 &&
+        myCoupons.indexOf(inputCoupon) > -1
+    ) {
+        enableBtn("coupon-apply");
+    } else {
+        if (
+            !document
+                .getElementById("coupon-apply")
+                .classList.contains("btn-disabled")
+        ) {
             document
                 .getElementById("coupon-apply")
-                .classList.remove("btn-disabled");
-
-            console.log(inputCoupon);
-
-            document
-                .getElementById("coupon-apply")
-                .addEventListener("click", () => {
-                    let percentage = 0.15;
-                    if (!couponApplied) {
-                        if (inputCoupon === myCoupons[0]) {
-                            discount(percentage);
-                        } else if (inputCoupon === myCoupons[1]) {
-                            percentage = 0.2;
-                            discount(percentage);
-                        }
-                    }
-                });
+                .classList.add("btn-disabled");
         }
+    }
+});
+
+// apply coupon
+document.getElementById("coupon-apply").addEventListener("click", () => {
+    let percentage = 0.15;
+    let inputCoupon = getValue("coupon");
+    if (!couponApplied) {
+        if (inputCoupon === myCoupons[0]) {
+            discount(percentage);
+        } else if (inputCoupon === myCoupons[1]) {
+            percentage = 0.2;
+            discount(percentage);
+        }
+    }
+});
+
+// enable next
+document.getElementById("phone").addEventListener("keyup", (e) => {
+    if (getValue("phone").length > 0 && selectedSeats > 0) {
+        enableBtn("btn-next");
+    } else if (getValue("phone").length < 1 || selectedSeats < 0) {
+        disableBtn("btn-next");
     }
 });
 
