@@ -12,6 +12,7 @@ function updateSeatCount() {
     availableSeats--;
     selectedSeats++;
     document.getElementById("available-seats").innerText = availableSeats;
+    document.getElementById("selected-seats").innerText = selectedSeats;
 }
 
 // update Price
